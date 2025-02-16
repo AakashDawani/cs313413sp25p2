@@ -1,0 +1,13 @@
+TestIterator Questions
+	1.	ArrayList is faster than LinkedList—ArrayList completed in 280ms, while LinkedList took 341ms.
+	    The slower performance of LinkedList is due to pointer dereferencing, which increases the access time.
+	2.	Using list.remove(Integer.valueOf(77)) only removes the first occurrence of 77, rather than all instances in the list, causing the test to fail.
+
+TestList Questions
+	1.	LinkedList finished in 286ms, while ArrayList took 291ms. LinkedList performs better when finding insertion points and executing insertions.
+	2.	Calling list.remove(5) removes the element at index 5, which happens to be 77. It does not remove the integer 5 itself.
+	3.	Using list.remove(Integer.valueOf(5)) removes the first occurrence of the number 5, regardless of its position in the list.
+
+TestPerformance Questions
+	1.	LinkedList is more efficient for adding or removing elements at the beginning since it only updates pointers rather than shifting elements.
+	    However, ArrayList excels in accessing elements, especially in the middle, due to its constant-time access (O(1)) compared to LinkedList’s sequential access (O(n)).
